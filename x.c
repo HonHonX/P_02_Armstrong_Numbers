@@ -18,6 +18,7 @@ int main () {
 	printf("\n *************************************** \n\n");
 	
 	//
+	printf("%d",is_armstrong_number(5));
 	
 	//Ende
 	printf("\n\n");
@@ -35,7 +36,7 @@ int main () {
          return numDigits(candidate/10,count++);
   }
 
-  bool is_armstrong_number(int candidate) {
+  int is_armstrong_number(int candidate) {
       int digit=0,sum=0;
       
       if (candidate<0)
@@ -50,5 +51,5 @@ int main () {
                 digit = candidate;
           sum+=digit^num;               
       }
-      return (sum==candidate);   
+      return (sum);   
  }
