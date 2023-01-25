@@ -52,7 +52,7 @@ int main () {
       
       for (int i=1;i<=num;i++) {
           if (candidate>10)
-                digit = (candidate%expo(10,i)/(10*i));
+                digit = candidate%expo(10,i);
           else 
                 digit = candidate;
 	  printf("\ndigit: %d",digit);       
