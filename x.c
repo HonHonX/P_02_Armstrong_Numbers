@@ -18,11 +18,13 @@ int main () {
 	printf("\n *************************************** \n\n");
 	
 	//
-	
+	int number;
+	printf("Please enter number: ");
+	scanf("%d",&number);
 	
 	//Ende
 	printf("\n\n");
-	return is_armstrong_number(8);
+	return is_armstrong_number(number);
 }
 
 //Funktionen
