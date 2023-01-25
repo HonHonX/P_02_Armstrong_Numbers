@@ -52,7 +52,10 @@ int main () {
       
       for (int i=1;i<=num;i++) {
           if (candidate>10){
-                digit = candidate%expo(10,i);
+		  if (i>2)
+                	digit = (candidate%expo(10,i))/(expo(10,i));
+		  else
+		        digit = candidate%expo(10,i); 
 	  }
           else 
                 digit = candidate;
