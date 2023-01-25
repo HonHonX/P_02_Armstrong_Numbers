@@ -37,7 +37,7 @@ int main () {
      if (candidate<10)
          return count;
      else 
-         return numDigits(candidate/10,count++);
+         return numDigits(candidate/10,count+1);
   }
 
   int is_armstrong_number(int candidate) {
