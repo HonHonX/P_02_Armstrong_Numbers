@@ -3,7 +3,7 @@
 #include <stdbool.h>
 
 //Funktions Prototypen
-int is_armstrong_number(int candidate);
+bool is_armstrong_number(int candidate);
 int numDigits(int candidate, int count);
 int expo(int num, int exp);
 
@@ -22,12 +22,17 @@ int main () {
 	
 	//Eingabeaufforderung
 	int number;
-	printf("Please enter number: ");
+	printf("\nPlease enter number: ");
 	scanf("%d",&number);
+	
+	if(is_armstrong_number(number))
+		printf("\n%d is an Armstrong number.");
+	else
+		printf("\n%d is not an Armstrong number.");
 	
 	//Ende
 	printf("\n\n");
-	return is_armstrong_number(number);
+	return 0;
 }
 
 //Funktionen
@@ -41,7 +46,7 @@ int main () {
          return numDigits(candidate/10,count+1);
   }
 
-  int is_armstrong_number(int candidate) {
+  bool is_armstrong_number(int candidate) {
       int digit=0,sum=0,result=1;
       
       if (candidate<0)
@@ -55,9 +60,8 @@ int main () {
           else 
                 digit = candidate;
 	  sum+=expo(digit,num);
-	  printf("\nErgebnis: %d\n",sum==candidate);
       }
-      return (sum);   
+      return (sum==candidate);   
  }
 
 int expo(int num, int exp) {
