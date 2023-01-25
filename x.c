@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<math.h>
 
 //Funktions Prototypen
 int is_armstrong_number(int candidate);
