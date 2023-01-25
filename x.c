@@ -26,9 +26,9 @@ int main () {
 	scanf("%d",&number);
 	
 	if(is_armstrong_number(number))
-		printf("\n%d is an Armstrong number.");
+		printf("\n%d is an Armstrong number.",number);
 	else
-		printf("\n%d is not an Armstrong number.");
+		printf("\n%d is not an Armstrong number.",number);
 	
 	//Ende
 	printf("\n\n");
