@@ -53,7 +53,7 @@ int main () {
           else 
                 digit = candidate;
 	  printf("\ndigit: %d",digit);
-          sum+=(digit^num);       
+          sum=sum+(digit^num);       
 	  printf("\nsum: %d\n",sum);
       }
       return (sum);   
