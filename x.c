@@ -32,6 +32,7 @@ int main () {
 //Funktionen
 
  int numDigits(int candidate, int count) {
+     printf("\ncount: %d",count);  
      if (candidate<=0)
          return 0;
      if (candidate<10)
