@@ -4,7 +4,7 @@
 //Funktions Prototypen
 int is_armstrong_number(int candidate);
 int numDigits(int candidate, int count);
-int exp(int num, int exp);
+int expo(int num, int exp);
 
 //Hauptprogramm
 int main () {
@@ -55,14 +55,14 @@ int main () {
           else 
                 digit = candidate;
 	  printf("\ndigit: %d",digit);       
-          printf("\nres: %d",exp(digit,num);
-	  sum+=exp(digit,num);
+          printf("\nres: %d",expo(digit,num);
+	  sum+=expo(digit,num);
 	  printf("\nsum: %d\n",sum);
       }
       return (sum);   
  }
 
-int exp(int num, int exp) {
+int expo(int num, int exp) {
       int result=1;
       while (exp!=0){
 	   result*=num;
