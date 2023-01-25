@@ -59,7 +59,7 @@ int main () {
 		  result*=digit;
 		  --num;
 	  }
-	  sum+=result
+	  sum+=result;
 	  printf("\nsum: %d\n",sum);
       }
       return (sum);   
