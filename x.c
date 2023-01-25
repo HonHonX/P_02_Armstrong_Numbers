@@ -53,6 +53,7 @@ int main () {
       for (int i=1;i<=num;i++) {
           if (candidate>10){
                 digit = candidate%expo(10,i);
+		digit /= 10;
 	  }
           else 
                 digit = candidate;
