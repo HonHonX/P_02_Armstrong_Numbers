@@ -47,7 +47,7 @@ int main () {
   }
 
   bool is_armstrong_number(int candidate) {
-      int digit=0,sum=0,result=1;
+      int digit=0,sum=0;
       
       if (candidate<0)
           candidate = -candidate;
