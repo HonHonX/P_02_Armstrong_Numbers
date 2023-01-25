@@ -55,7 +55,7 @@ int main () {
           else 
                 digit = candidate;
 	  printf("\ndigit: %d",digit);       
-          printf("\nres: %d",expo(digit,num);
+          printf("\nres: %d",expo(digit,num));
 	  sum+=expo(digit,num);
 	  printf("\nsum: %d\n",sum);
       }
