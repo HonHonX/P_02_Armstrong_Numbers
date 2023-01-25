@@ -54,11 +54,11 @@ int main () {
           else 
                 digit = candidate;
 	  printf("\ndigit: %d",digit);
-	  printf("\nexp %d ^ %d: %d\n",digit,num,digit^num);
           while (num!=0){
 		  result*=digit;
 		  --num;
 	  }
+          printf("\nres: %d",result);
 	  sum+=result;
 	  printf("\nsum: %d\n",sum);
       }
