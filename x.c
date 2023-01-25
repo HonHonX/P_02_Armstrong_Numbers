@@ -22,7 +22,7 @@ int main () {
 	
 	//Ende
 	printf("\n\n");
-	return is_armstrong_number(5);
+	return is_armstrong_number(8);
 }
 
 //Funktionen
@@ -52,7 +52,7 @@ int main () {
                 digit = candidate;
 	  printf("\ndigit: %d",digit);
           sum+=digit^num;       
-	  printf("\nsum: %d",sum);
+	  printf("\nsum: %d\n",sum);
       }
       return (sum);   
  }
