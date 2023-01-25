@@ -54,9 +54,10 @@ int main () {
           else 
                 digit = candidate;
 	  printf("\ndigit: %d",digit);
-          while (num!=0){
+	  int exp = num; 
+          while (exp!=0){
 		  result*=digit;
-		  --num;
+		  --exp;
 	  }
           printf("\nres: %d",result);
 	  sum+=result;
