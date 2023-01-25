@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<math.h>
+#include <stdbool.h>
 
 //Funktions Prototypen
 int is_armstrong_number(int candidate);
@@ -14,7 +15,7 @@ int main () {
 	
 	printf("\n *************************************** ");
 	printf("\n *   ^,,,,^   *                        * ");
-	printf("\n *  ( o x o)  *                        * ");
+	printf("\n *  ( o x o)  *   Armstrong Zahlen     * ");
 	printf("\n *  ( 7   7)  *                        * ");
 	printf("\n *   ´´´´´´   *                ©S.Buch * ");
 	printf("\n *************************************** \n\n");
