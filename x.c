@@ -18,11 +18,11 @@ int main () {
 	printf("\n *************************************** \n\n");
 	
 	//
-	printf("%d",is_armstrong_number(5));
+	
 	
 	//Ende
 	printf("\n\n");
-	return 0;
+	return is_armstrong_number(5);
 }
 
 //Funktionen
@@ -43,13 +43,16 @@ int main () {
           candidate = -candidate;
       
       int num = numDigits(candidate,1);
+      printf("\nnum: %d",num);
       
       for (int i=1;i<=num;i++) {
           if (candidate>10)
                 digit = candidate%(10*i);
           else 
                 digit = candidate;
-          sum+=digit^num;               
+	  printf("\ndigit: %d",digit);
+          sum+=digit^num;       
+	  printf("\nsum: %d",sum);
       }
       return (sum);   
  }
