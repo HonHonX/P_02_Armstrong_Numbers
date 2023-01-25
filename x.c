@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 //Funktions Prototypen
-bool is_armstrong_number(int candidate);
+int is_armstrong_number(int candidate);
 int numDigits(int candidate, int count);
 
 //Hauptprogramm
