@@ -1,6 +1,8 @@
 #include<stdio.h>
 
 //Funktions Prototypen
+bool is_armstrong_number(int candidate);
+int numDigits(int candidate, int count);
 
 //Hauptprogramm
 int main () {
@@ -23,3 +25,30 @@ int main () {
 }
 
 //Funktionen
+
+ int numDigits(int candidate, int count) {
+     if (candidate<=0)
+         return 0;
+     if (candidate<10)
+         return count;
+     else 
+         return numDigits(candidate/10,count++);
+  }
+
+  bool is_armstrong_number(int candidate) {
+      int digit=0,sum=0;
+      
+      if (candidate<0)
+          candidate = -candidate;
+      
+      int num = numDigits(candidate,1);
+      
+      for (int i=1;i<=num;i++) {
+          if (candidate>10)
+                digit = candidate%(10*i);
+          else 
+                digit = candidate;
+          sum+=digit^num;               
+      }
+      return (sum==candidate);   
+ }
