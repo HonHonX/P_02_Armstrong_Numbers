@@ -9,7 +9,7 @@ int expo(int num, int exp);
 //Hauptprogramm
 int main () {
 	/*
-	*
+	* Test, ob eine Zahl eine Armstrong Zahl ist.
 	*/
 	
 	printf("\n *************************************** ");
@@ -19,7 +19,7 @@ int main () {
 	printf("\n *   ´´´´´´   *                ©S.Buch * ");
 	printf("\n *************************************** \n\n");
 	
-	//
+	//Eingabeaufforderung
 	int number;
 	printf("Please enter number: ");
 	scanf("%d",&number);
@@ -62,7 +62,7 @@ int main () {
 	  printf("\ndigit: %d",digit);       
           printf("\nres: %d",expo(digit,num));
 	  sum+=expo(digit,num);
-	  printf("\nsum: %d\n",sum);
+	  printf("\nErgebnis: %d\n",sum==candidate);
       }
       return (sum);   
  }
