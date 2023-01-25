@@ -48,19 +48,12 @@ int main () {
           candidate = -candidate;
       
       int num = numDigits(candidate,1);
-      printf("\nnum: %d",num);
       
       for (int i=1;i<=num;i++) {
-          if (candidate>10){
-		 // if (i>1)
+          if (candidate>10)
                 	digit = candidate%expo(10,i)/expo(10,i-1);
-		  //else
-		       // digit = candidate%expo(10,i); 
-	  }
           else 
                 digit = candidate;
-	  printf("\ndigit: %d",digit);       
-          printf("\nres: %d",expo(digit,num));
 	  sum+=expo(digit,num);
 	  printf("\nErgebnis: %d\n",sum==candidate);
       }
